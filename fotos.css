@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 1.5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: 75px;   
+}
+
+.fotos {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 0px;
+}
+
+.img {
+    width: 95%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.card1 {
+    background-image:url('https://cinemaeafins.com.br/wp-content/uploads/2021/10/The-Batman-Filme-2022.jpg');
+}
+
+.card2 {
+    background-image: url('https://quilombogeek.files.wordpress.com/2022/04/20220309-ovicio-batman-dc-filme-poster-internacional.jpg?w=1300&h=768&crop=1');
+    background-position: 50% 50%;
+}
+
+.card3 {
+    background-image: url('https://s2.glbimg.com/1FmXm4VETBupdtQoD2aioGgazqg=/e.glbimg.com/og/ed/f/original/2022/01/19/fjedsmcxeag7nw1.jpg');
+    background-position: 50% 11%;
+}
+
+.card4 {
+    background-image: url('https://imagizer.imageshack.com/v2/xq90/922/qoknRC.jpg');
+    background-position: 20% 10%;
+}
+
+.card5 {
+    background-image: url('https://i2.wp.com/cafeplus.com.br/wp-content/uploads/2022/03/batman-premiere-1024x683.jpg');
+    background-position: 50% 0%;
+}
+
+.card6 {
+    background-image: url('https://imagizer.imageshack.com/v2/xq90/923/kXYM5o.jpg');
+    background-position: 20% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+footer {
+    display: flex;
+    height: 200px;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    footer {
+        margin-top: 1200px;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    .img {
+        display: flex;
+    
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
